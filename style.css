@@ -166,30 +166,17 @@ margin-bottom:30px;
 }
 
 .message{
-
-.message{
-
 max-width:700px;
-
 margin:auto;
-
 font-size:22px;
-
 line-height:2;
-
 color:#2d2d2d;
-
 text-align:left;
-
 background:white;
-
 padding:30px;
-
 border-radius:20px;
-
 box-shadow:0 10px 30px rgba(0,0,0,.15);
-
-} 
+}
   .message h2{
 
 color:#7b1e52;
@@ -318,16 +305,9 @@ opacity:.8;
 margin-top:40px;
 }
 
-@keyframes hideLoading{
-
-0%,80%{
-opacity:1;
+@keyframes sealGlow{
+50%{
+transform:translate(-50%,-50%) scale(1.08);
+box-shadow:0 0 40px gold;
 }
-
-100%{
-opacity:0;
-visibility:hidden;
-pointer-events:none;
-}
-
 }
