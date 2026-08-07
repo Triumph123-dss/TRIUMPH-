@@ -1,6 +1,19 @@
 function openLetter() {
-    document.querySelector(".welcome").style.display = "none";
-    document.getElementById("letter").style.display = "block";
-}
 
-document.getElementById("envelope").addEventListener("click", openLetter);
+const welcome = document.getElementById("welcome");
+const letter = document.getElementById("letter");
+
+welcome.style.transition = "1s";
+welcome.style.opacity = "0";
+
+setTimeout(function(){
+
+welcome.style.display="none";
+
+letter.style.display="block";
+
+letter.style.animation="fadeLetter 1.5s";
+
+},1000);
+
+}
