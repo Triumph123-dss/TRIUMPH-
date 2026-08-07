@@ -1,31 +1,32 @@
-window.onload=function(){
+window.onload = function () {
 
-setTimeout(function(){
+    const loading = document.getElementById("loadingScreen");
+    const welcome = document.getElementById("welcome");
 
-document.getElementById("loadingScreen").style.display="none";
+    // Hide welcome while loading screen is showing
+    welcome.style.display = "none";
 
-},4000);
+    setTimeout(function () {
+
+        loading.style.display = "none";
+        welcome.style.display = "flex";
+
+    }, 4000);
 
 };
 
-function openLetter(){
+function openLetter() {
 
-const welcome=document.getElementById("welcome");
+    const welcome = document.getElementById("welcome");
+    const letter = document.getElementById("letter");
 
-const letter=document.getElementById("letter");
+    welcome.style.opacity = "0";
 
-welcome.style.transition="1s";
+    setTimeout(function () {
 
-welcome.style.opacity="0";
+        welcome.style.display = "none";
+        letter.style.display = "block";
 
-setTimeout(function(){
-
-welcome.style.display="none";
-
-letter.style.display="block";
-
-letter.style.animation="fadeLetter 1.5s";
-
-},1000);
+    }, 800);
 
 }
