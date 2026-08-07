@@ -1,10 +1,22 @@
-function openLetter() {
+window.onload=function(){
 
-const welcome = document.getElementById("welcome");
-const letter = document.getElementById("letter");
+setTimeout(function(){
 
-welcome.style.transition = "1s";
-welcome.style.opacity = "0";
+document.getElementById("loadingScreen").style.display="none";
+
+},4000);
+
+};
+
+function openLetter(){
+
+const welcome=document.getElementById("welcome");
+
+const letter=document.getElementById("letter");
+
+welcome.style.transition="1s";
+
+welcome.style.opacity="0";
 
 setTimeout(function(){
 
