@@ -163,6 +163,8 @@ margin-bottom:30px;
 
 .message{
 
+.message{
+
 max-width:700px;
 
 margin:auto;
@@ -171,8 +173,42 @@ font-size:22px;
 
 line-height:2;
 
+color:#2d2d2d;
+
+text-align:left;
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+} 
+  .message h2{
+
+color:#7b1e52;
+
+text-align:center;
+
+margin-bottom:20px;
+
+font-size:32px;
+
 }
 
+.message p{
+
+color:#2d2d2d;
+
+font-size:22px;
+
+line-height:2;
+
+white-space:pre-line;
+
+}
 @keyframes fadeLetter{
 
 from{
