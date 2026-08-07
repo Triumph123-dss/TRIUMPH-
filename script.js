@@ -2,15 +2,14 @@ window.onload = function () {
 
     const loading = document.getElementById("loadingScreen");
     const welcome = document.getElementById("welcome");
+    const letter = document.getElementById("letter");
 
-    // Hide welcome while loading screen is showing
     welcome.style.display = "none";
+    letter.style.display = "none";
 
     setTimeout(function () {
-
         loading.style.display = "none";
         welcome.style.display = "flex";
-
     }, 4000);
 
 };
@@ -20,13 +19,13 @@ function openLetter() {
     const welcome = document.getElementById("welcome");
     const letter = document.getElementById("letter");
 
-    welcome.style.opacity = "0";
+    welcome.style.display = "none";
 
-    setTimeout(function () {
+    document.body.style.overflow = "auto";
 
-        welcome.style.display = "none";
-        letter.style.display = "block";
+    letter.style.display = "block";
+    letter.style.animation = "fadeLetter 1s ease";
 
-    }, 800);
+    window.scrollTo(0, 0);
 
 }
